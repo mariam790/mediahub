@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CategorieController;
 
-Route::get('/', [PageController::class, 'accueil']);
+Route::get('/', [PageController::class, 'accueil'])->name('accueil');
 Route::get('/a-propos', [PageController::class, 'aPropos'])->name('a-propos');
 
 Route::get('/categories', [CategorieController::class, 'index'])->name('categories.index');

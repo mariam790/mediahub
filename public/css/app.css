@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background: #f5f6f8;
+}
+
+/* Navigation */
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    background: #1f2937;
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navigation a:first-child {
+    font-weight: bold;
+    margin-right: auto;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+/* Contenu principal */
+.conteneur {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+/* Composant Carte */
+.carte {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.carte h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+.carte-corps p {
+    margin: 0;
+}
+
+/* Pied de page */
+.pied-de-page {
+    text-align: center;
+    padding: 1rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .navigation {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .navigation a:first-child {
+        margin-right: 0;
+    }
+
+    .conteneur {
+        padding: 1rem;
+    }
+}
