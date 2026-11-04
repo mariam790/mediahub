@@ -6,7 +6,7 @@
     <h1>Contenus multimédias</h1>
 
     @forelse ($contenus as $contenu)
-    <x-carte titre="{{ $contenu->titre }}">
+    <x-carte titre="{{ $contenu->titre }}" :mis-en-avant="$contenu->mis_en_avant">
         <p>{{ $contenu->description }}</p>
     </x-carte>
     @empty

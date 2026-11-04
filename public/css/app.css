@@ -57,6 +57,12 @@ body {
 .carte-corps p {
     margin: 0;
 }
+.carte-en-avant {
+    border-color: #f59e0b;
+    background: #fffbeb;
+    border-width: 2px;
+}
+
 
 /* Pied de page */
 .pied-de-page {

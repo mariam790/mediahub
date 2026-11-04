@@ -11,7 +11,7 @@ class Carte extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct(public string $titre)
+    public function __construct(public string $titre, public bool $misEnAvant = false)
     {
         //
     }

@@ -13,6 +13,6 @@ class PageController extends Controller
 
     public function aPropos()
     {
-        return 'À propos de MediaHub';
+        return view('a-propos');
     }
 }
